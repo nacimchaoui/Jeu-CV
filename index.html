@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./css/animate.css" media="screen" title="no title">
+        <link rel="stylesheet" href="./css/jeu.css" media="screen" title="no title">
+        <link rel="stylesheet" href="./css/jquery-ui.min.css" media="screen" title="no title">
+        <title>Nacim CHAOUI</title>
+    </head>
+    <body>
+        <div class="header">
+            <div id="titre">
+                <h1>Nacim CHAOUI</h1>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li id="accueil">
+                        <a href="#">Accueil</a>
+                    </li>
+                    <li>
+                        <a id="about" href="#about">A propos</a>
+                    </li>
+                    <li>
+                        <a id="contact" href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a id="cv" href="./pdf/CV_Nacim_Chaoui.pdf">CV</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="competences"></div>
+        <div class="middle flou">
+            <div id="progressbar">
+                <div id="barre"></div>
+            </div>
+            <h1 class="title-middle">Nacim</h1>
+            <h3>Jeune
+                <span>développeur</span>,
+                <span>JavaScript.</span><br>
+                Découvrez
+                <a id="parcours" href="#a_propos">mon parcours</a>,
+                <a id="realisations" href="#a_propos">mes réalisations</a>
+                et plus encore.</h3>
+            <p class="">
+                <a href="#" class="button">Découvrez moi</a>
+            </p>
+        </div>
+        <div class="regles">
+            <div class="box">
+                <h3 style="margin-top:0px;">Alerte !</h3>
+                <p>
+                    Le site à été hacké par Bart Simpson !!<br>
+                    Pour découvrir mes compétences, faites-le avancer à l'aide des touches
+                    <img src="./img/touchesLR.png" alt=""/><br>
+                    et cassez les palissades avec la touche
+                    <img src="./img/space.png" alt=""/>
+                    <br>
+                    (Pour une meilleur visibilité, veuillez mettre votre navigateur en plein écran)
+                </p>
+                <a href="#" class="button jouer">Jouer
+                    <img src="./img/donuts_croque.png" style="width:2%;" alt=""/></a>
+                <a href="./pdf/CV_Nacim_Chaoui.pdf" class="button">CV</a><br>
+            </div>
+        </div>
+        <div class="masque cache bart" id="masqueBart" style="z-index: 1;">
+            <img id="bart" class="sprite cache" src="./img/bart.png" alt="bart"/>
+        </div>
+        <div class="masque flou cache" id="masqueBg">
+            <img id="bg" class="sprite cache" src="./img/bg-complet.png" alt="bg"/>
+        </div>
+        <div id="haie"></div>
+        <div class="fin">
+          <a href="./pdf/CV_Nacim_Chaoui.pdf">
+            <img src="./img/CV_Nacim_CHAOUI.png" alt="" style="width: 30%;float: right;margin: 10px 10px 10px 0px;"></a>
+              <h3 style="margin-top:0px;">Félicitation !</h3>
+                Vous avez débloqué toutes mes compétences.<br>
+                Si mon profil vous intéresse, cliquez sur mon CV: <br>
+        </div>
+        <noscript>
+            <p>Veuillez activer JavaScript</p>
+        </noscript>
+        <script type="text/javascript" src="./lib/jquery-1.12.3.min.js"></script>
+        <script type="text/javascript" src="./lib/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./lib/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/objet.js"></script>
+        <script type="text/javascript" src="./js/jeu.js"></script>
+        <script type="text/javascript" src="./js/fonctions.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-31704933-3', 'auto');
+          ga('send', 'pageview');
+        </script>
+    </body>
+</html>

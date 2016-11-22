@@ -1,0 +1,254 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url("../img/clouds.jpg");
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+    color: #2980B9;
+}
+nav {
+    float: right;
+    list-style-type: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+}
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+li a.active {
+    color: white;
+    background-color: 'DodgerBlue';
+}
+.button {
+    background-color: #ECF0F1;
+    padding: 10px;
+    width: 24%;
+    border-radius: 4px;
+    text-decoration: initial;
+    text-transform: uppercase;
+    -webkit-box-shadow: 2px 2px lightslategrey;
+    -moz-box-shadow: 2px 2px lightslategrey;
+    box-shadow: 2px 2px lightslategrey;
+}
+.button:hover {
+    background-color: #E74C3C;
+    color: #ECF0F1;
+}
+.blur {
+    -webkit-filter: blur(4px);
+    /* Chrome, Opera, etc. */
+    filter: url('../img/blur.svg');
+    /* Ancien FF */
+    filter: blur(10px);
+}
+.regles {
+    display: block;
+    padding-top: 20px;
+    background-color: whitesmoke;
+    position: fixed;
+    margin: -23% 20%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border-radius: 9px 9px 9px 9px;
+}
+.box {
+    text-align: center;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    background-image: url(../img/bart_skate.png);
+    background-repeat: no-repeat;
+    background-size: 12%;
+}
+@-webkit-keyframes fondAnime {
+    from {
+        background-position: 0 -210px;
+    }
+    to {
+        background-position: 100% -210px;
+    }
+}
+@-moz-keyframes fondAnime {
+    from {
+        background-position: 0 -210px;
+    }
+    to {
+        background-position: 100% -210px;
+    }
+}
+@-o-keyframes fondAnime {
+    from {
+        background-position: 0 -210px;
+    }
+    to {
+        background-position: 100% -210px;
+    }
+}
+@-ms-keyframes fondAnime {
+    from {
+        background-position: 0 -210px;
+    }
+    to {
+        background-position: 100% -210px;
+    }
+}
+.animation {
+    height: 400px;
+    background: url(../img/nuages.jpg);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: fondAnime 40s linear infinite;
+    -webkit-animation: fondAnime 40s linear infinite;
+    -moz-animation: fondAnime 40s linear infinite;
+    -o-animation: fondAnime 40s linear infinite;
+    -ms-animation: fondAnime 40s linear infinite;
+}
+.titre-middle {
+    text-align: center;
+}
+.carre {
+    width: 48px;
+    position: absolute;
+    bottom: 20px;
+    background: url(../img/haie.png);
+    background-repeat: no-repeat;
+}
+.competences {
+    position: absolute;
+    left: 10%;
+    margin: 6% -1.5%;
+    padding: 2px 2px;
+    background-color: rgba(246, 246, 246, 0.56);
+    border-radius: 6px;
+    text-align: center;
+}
+#masqueBg {
+    max-width: 1788px;
+    height: 100px;
+    bottom: 0px;
+    opacity: 0;
+    overflow: hidden;
+    left: -4px;
+}
+.bg {
+    bottom: 0px;
+    max-width: 1788px;
+}
+.header {
+    margin: 0px 110px;
+}
+#titre {
+    float: left;
+}
+.menu {
+    list-style-type: none;
+}
+.middle {
+    padding: 200px 300px;
+    text-align: center;
+}
+.ruban {
+    background: url('../img/bart_ruban.png')
+}
+#html, #css, #nodejs, #meteor, #sass, #wordpress {
+    width: 33px;
+    margin-right: 10px;
+}
+#wordpress {
+    margin-right: 0px;
+}
+#javascript, #angular, #bootstrap {
+    width: 40px;
+    margin-right: 10px;
+}
+#jquery, #mongodb {
+    width: 130px;
+    margin-right: 10px;
+}
+#express {
+    width: 90px;
+    margin-right: 10px;
+}
+#progressbar {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 300px;
+    height: 20px;
+    padding: 11px 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    margin: -11.3% 18%;
+    -webkit-box-shadow: 0px 4px 4px -4px rgba(255, 255, 255, 0.4), 0px -3px 3px -3px rgba(255, 255, 255, 0.25), inset 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px -4px rgba(255, 255, 255, 0.4), 0px -3px 3px -3px rgba(255, 255, 255, 0.25), inset 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.83);
+}
+#progressbar:before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 294px;
+    height: 18px;
+    top: 12px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.85);
+    box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.85);
+}
+#barre {
+    background: rgb(229, 195, 25);
+    background: -moz-linear-gradient(top, rgba(229, 195, 25, 1) 0%, rgba(168, 140, 0, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(229, 195, 25, 1)), color-stop(100%, rgba(168, 140, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(229, 195, 25, 1) 0%, rgba(168, 140, 0, 1) 100%);
+    background: -o-linear-gradient(top, rgba(229, 195, 25, 1) 0%, rgba(168, 140, 0, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(229, 195, 25, 1) 0%, rgba(168, 140, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(229, 195, 25, 1) 0%, rgba(168, 140, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e5c319', endColorstr='#a88c00', GradientType=0);
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(229, 195, 25, 1), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.45), inset 1px 0px 0px 0px rgba(255, 255, 255, 0.25), inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 12px 0px rgba(229, 195, 25, 1), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.45), inset 1px 0px 0px 0px rgba(255, 255, 255, 0.25), inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 14px;
+    top: 13px;
+    left: 8px;
+}
+.fin {
+    position: fixed;
+    margin: -30% 20%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border: 1px solid lightgrey;
+    border-radius: 9px 9px;
+    background-color: whitesmoke;
+    text-align: center;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+}
+.form-horizontal {
+    float: left;
+    max-width: 400px;
+}
+.homer {
+    background: url(../img/homer_pompier.png)
+}
